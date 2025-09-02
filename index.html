@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="weather-app.webp" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>Weather Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getData()">Get Data</button>
+      <h2 id="countryname"></h2>
+      <h2 id="regionname"></h2>
+      <h2 id="cityname"></h2>
+      <h2 id="temperature"></h2>
+      <img id="weather-icon" style="display: none" />
+      <h2 id="condition"></h2>
+      <h2 id="time"></h2>
+    </div>
+    <div id="no-data" style="display: none "><h2>No data found</h2>
+    <button onclick="location.reload()">Try again</button>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
