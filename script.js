@@ -15,7 +15,7 @@ async function getcity() {
   
   document.querySelector(".card").style.display = "none";
   
-  let url = `https://api.weatherapi.com/v1/current.json?key=ec7437aa43f74bc39a491739250109&q=${city}&aqi=no`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=7d6cbec9d0e248748c945642261210&q=${city}&aqi=no`;
   let response = await fetch(url);
   let data = await response.json();
   
